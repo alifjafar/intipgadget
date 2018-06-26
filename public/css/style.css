@@ -792,6 +792,40 @@
         border-color: #dee2e6;
       }
 
+      .author-post {
+          float: right;
+      }
+
+      @media only screen and (max-width: 719px){
+          .post-title {
+            font-size: 22px;
+          }
+
+          /* .post-content h2 {
+              font-size: 18px;
+          } */
+
+          .label-cat, .label-date {
+              font-size: 10px;
+          }
+
+          .post-content p {
+              font-size: 14px;
+          }
+
+          h1 { font-size: 2em; }
+          h2 { font-size: 1.5em; }
+          h3 { font-size: 1.17em; }
+          h4 { font-size: 1.12em; }
+          h5 { font-size: .83em; }
+          h6 { font-size: .75em; }
+
+          .author-post {
+              float: none;
+          }
+        }
+
+
     /*
 .search-box input[type="text"] {
     width: 200px;
