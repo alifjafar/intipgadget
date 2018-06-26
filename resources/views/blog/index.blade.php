@@ -13,7 +13,7 @@
                                      @if($featuredPost->image)
                                     <img src="{{ Voyager::image($featuredPost->image) }}" alt="{{ $featuredPost->title }}" class="lazyload" data-src="{{ Voyager::image( $featuredPost->image ) }}">
                                     @else
-                                    <img src="https://farnetwork.net/wp-content/uploads/2018/05/akrales_180305_2350_0160.0.jpg" alt="{{ $featuredPost->title }}">
+                                    <img src="{{ asset('img/placeholder.svg') }}" alt="{{ $featuredPost->title }}">
                                     @endif
 
                                 </a>

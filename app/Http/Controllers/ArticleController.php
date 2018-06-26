@@ -29,7 +29,7 @@ class ArticleController extends Controller
 
     public function getPostByAuthor($username)
     {
-        $user = User::IsUsername($username);
+        $user = User::isusername($username);
         $posts = $user->posts()->paginate(6);
 
         return view('blog.pages.author', [

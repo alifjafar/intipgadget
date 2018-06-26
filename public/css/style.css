@@ -70,7 +70,7 @@
     }
 
     .bg-social {
-        background: url("http://farnetwork.net/images/search.png");
+        background: url("https://farnetwork.net/images/search.png");
         background-color: #008080;
         border: 0px;
     }
@@ -80,7 +80,7 @@
     }
 
     .bg-pattern {
-        background: url("http://localhost/farnetwork/public/img/geo.png") fixed repeat;
+        background: url("/img/geo.png") fixed repeat;
         background-position-y: 10%;
     }
 
@@ -386,6 +386,7 @@
 
     .post-content img {
         max-width: 100%;
+	height: auto;
     }
     /* Back to Top */
 
