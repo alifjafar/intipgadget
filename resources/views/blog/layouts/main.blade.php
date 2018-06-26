@@ -32,11 +32,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"> --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootsnav.css">
+    <link rel="stylesheet" href="/css/bootsnav.css">
     {{-- <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
@@ -61,11 +61,11 @@
 
     {{-- <script src="{{ asset('js/jquery-slim.min.js') }}"></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/lazysizes.min.js" async=""></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootsnav.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/js/lazysizes.min.js" async=""></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootsnav.js"></script>
+    <script src="/js/custom.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script> --}}
     @yield('js')
