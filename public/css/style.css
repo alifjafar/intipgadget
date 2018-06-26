@@ -399,6 +399,7 @@
         height: 50px;
         background-color: #22a9bb;
         text-indent: -9999px;
+        z-index: 9999;
         display: none;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
