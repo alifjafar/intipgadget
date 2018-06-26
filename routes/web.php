@@ -17,8 +17,3 @@ Route::get('/dapur')->name('admin');
 Route::group(['prefix' => 'dapur'], function () {
     Voyager::routes();
 });
-
-Route::get('/coba', function () {
-    $coba = App\Post::published()->first();
-    return $coba->full_name;
-});
