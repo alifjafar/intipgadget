@@ -112,9 +112,9 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 @if(isset($dataTypeContent->avatar))
-                                    <img src="{{ filter_var($dataTypeContent->avatar, FILTER_VALIDATE_URL) ? $dataTypeContent->avatar : Voyager::image( $dataTypeContent->avatar ) }}" style="width:200px; height:auto; clear:both; display:block; padding:2px; border:1px solid #ddd; margin-bottom:10px;" />
+                                    <img src="{{ $dataTypeContent->avatar }}" style="width:200px; height:auto; clear:both; display:block; padding:2px; border:1px solid #ddd; margin-bottom:10px;" />
                                 @endif
-                                <input type="file" data-name="avatar" name="avatar">
+                                Visit : <a href="https://gravatar.com">Gravatar</a> to change Avatar
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
         <iframe id="form_target" name="form_target" style="display:none"></iframe>
         <form id="my_form" action="{{ route('voyager.upload') }}" target="form_target" method="post" enctype="multipart/form-data" style="width:0px;height:0;overflow:hidden">
             {{ csrf_field() }}
-            <input name="image" id="upload_file" type="file" onchange="$('#my_form').submit();this.value='';">
+            {{--  <input name="image" id="upload_file" type="file" onchange="$('#my_form').submit();this.value='';">  --}}
             <input type="hidden" name="type_slug" id="type_slug" value="{{ $dataType->slug }}">
         </form>
     </div>
