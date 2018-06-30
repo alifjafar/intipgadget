@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Post;
 use App\User;
 use App\Category;
@@ -14,15 +13,13 @@ class ArticleController extends Controller
     {
         $post = Post::onslug($slug)->first();
 
-        if($post) {
-            return view('blog.posts.single',[
+        if ($post) {
+            return view('blog.posts.single', [
                 'post' => $post
             ]);
-        }
-        else if($slug == 'dapur'){
+        } elseif ($slug == 'dapur') {
             return redirect('/dapur/dashboard');
-        }
-        else {
+        } else {
             return abort(404);
         }
     }

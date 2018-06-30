@@ -2,9 +2,6 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-
 class Post extends \TCG\Voyager\Models\Post
 {
     public function scopeFeatured()
@@ -19,18 +16,19 @@ class Post extends \TCG\Voyager\Models\Post
 
     public function scopeLatest()
     {
-        return $this->orderBy('created_at','desc');
+        return $this->orderBy('created_at', 'desc');
     }
 
     public function scopeOnSlug($query, $slug)
     {
-        return $query->where('slug', '=' , $slug);
+        return $query->where('slug', '=', $slug);
     }
 
     public function tags()
     {
         return $this->belongsToMany('App\Tag');
     }
+
     // const PUBLISHED = 'PUBLISHED';
 
     // public function getFullNameAttribute()
@@ -62,5 +60,4 @@ class Post extends \TCG\Voyager\Models\Post
     // {
     //     return $this->belongsToMany('App\Tag');
     // }
-
 }

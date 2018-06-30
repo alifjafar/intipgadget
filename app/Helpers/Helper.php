@@ -2,8 +2,8 @@
 
 use App\Post;
 
-function recent_post() {
-
+function recent_post()
+{
     $recentPost = Post::published()
         ->latest()
         ->take(7)
@@ -11,4 +11,3 @@ function recent_post() {
 
     return $recentPost;
 }
-?>

@@ -4,10 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
 class Tag extends Model
 {
-
     public function scopeOnSlug($query, $slug)
     {
         $query->where('slug', $slug);
