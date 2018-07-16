@@ -1,6 +1,6 @@
 @extends('blog.layouts.main')
 @section('title')
-Tags : {{$tags->name}} -
+Tag : {{$tags->name}} -
 @endsection
 @section('header')
 <header>
@@ -14,7 +14,6 @@ Tags : {{$tags->name}} -
                 <div class="col-md-6">
                     <ol class="breadcrumb__post float-right">
                         <li class="breadcrumb-item"><a href="{{ route('blog') }}"><i class="fa fa-home"></i> Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tag</li>
                         <li class="breadcrumb-item active" aria-current="page">{{ $tags->name }}</li>
                     </ol>
                 </div>

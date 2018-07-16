@@ -14,7 +14,6 @@
                 <div class="col-md-6">
                     <ol class="breadcrumb__post float-right">
                         <li class="breadcrumb-item"><a href="{{ route('blog') }}"><i class="fa fa-home"></i> Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Category</li>
                         <li class="breadcrumb-item active" aria-current="page">{{ $posts[0]->category->name }}</li>
                     </ol>
                 </div>

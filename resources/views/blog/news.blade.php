@@ -50,7 +50,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="link--black card-author">
+                            <a href="{{ route('author_post', $post->authorId->username ) }}" class="link--black card-author">
                                 <img src="{{ $post->authorId->avatar }}" alt="$post->authorId->name" class="avatar-post"> {{ $post->authorId->name }}</a>
                         </div>
                     </div>
