@@ -26,13 +26,10 @@ class ArticleController extends Controller
 
     public function getPostByAuthor($username)
     {
-        $user = User::isusername($username);
+        $author = User::isusername($username);
         $posts = $user->posts()->paginate(6);
 
-        return view('blog.pages.author', [
-            'posts' => $posts,
-            'author' => $user,
-        ]);
+        return view('blog.pages.author', compact('author', 'posts'));
     }
 
     public function getPostByCategory($slug)
@@ -40,19 +37,14 @@ class ArticleController extends Controller
         $cat = Category::onslug($slug)->first();
         $posts = $cat->posts()->paginate(6);
 
-        return view('blog.pages.category', [
-            'posts' => $posts
-        ]);
+        return view('blog.pages.category', compact('posts'));
     }
 
     public function getPostByTag($slug)
     {
-        $tag = Tag::onslug($slug)->first();
+        $tags = Tag::onslug($slug)->first();
         $posts = $tag->posts()->paginate(6);
 
-        return view('blog.pages.tag', [
-            'posts' => $posts,
-            'tags' => $tag
-        ]);
+        return view('blog.pages.tag', compact('posts', 'tags'));
     }
 }
